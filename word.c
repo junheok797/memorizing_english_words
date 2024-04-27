@@ -3,6 +3,8 @@
 #include <string.h>
 #include "word.h"
 
+#define _CRT_SECURE_NO_WORNINGS
+
 Word* getWord(const char* filename, int* size)
 {
     // 파일 열기
@@ -44,6 +46,21 @@ Word* getWord(const char* filename, int* size)
 
     fclose(file);
     return words;
+}
+
+void saveWord(Word* words, int* size)
+{
+    // 파일 열기
+    FILE* file = fopen("wrong_words.txt", "w");
+    if (file == NULL)
+        printf("파일 열기 실패\n");
+
+    for (int i = 0; i < size; i++)
+    {
+        fprintf(file, "%s, %s\n", words[i].english, words[i].korean);
+    }
+
+    fclose(file);
 }
 
 void printWords(Word* words, int size)
