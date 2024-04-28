@@ -131,6 +131,9 @@ void game(Word* words, int size, Word* wrong_words, int* num_wrong_words, int* l
 
     if (tmp_life != *life)
     {
+        wrong_words[*num_wrong_words].english = malloc(strlen(wordE) + 1);
+        wrong_words[*num_wrong_words].korean = malloc(strlen(wordK) + 1);
+
         strcpy(wrong_words[*num_wrong_words].english, wordE);
         strcpy(wrong_words[*num_wrong_words].korean, wordK);
         (*num_wrong_words)++;
@@ -172,7 +175,7 @@ int main()
 
                 if (intention == 1)
                 {
-                    printf("\n\n");
+                    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                     printf("=================== 다음 단어 입니다 ===================\n\n");
                 }
                 else if (intention == 2)
