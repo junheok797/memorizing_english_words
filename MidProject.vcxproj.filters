@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="words.txt" />
+    <Text Include="wrong_words.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="word.h">

@@ -1,3 +1,2 @@
-specialize, 전공하다
-associate, 관련시키다
-certification, 증명서
+prospective, 미래의, 장래의
+opening, 공석
